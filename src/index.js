@@ -1,17 +1,29 @@
+// entry file of React
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
+import "./style.css";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// // function 
+// function hello(){
+//     return "Namaste React";
+//     //function return Data type
+// }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// // functional-component
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// function Hello(){
+//     return <h1>Namaste React</h1>
+// }
+
+
+// calling : function - hello();
+            //  component- <Hello/>
+
+// const Hello=()=>{
+
+//     let x=2304;
+//     return <h1 className='hello'>Namaste React {x}</h1> 
+
+// }
+
+ReactDOM.render(<App/>,document.getElementById("root"));
